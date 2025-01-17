@@ -1,1 +1,94 @@
-@import url("./something.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #101010;
+    color: #fff;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container{
+    background-color: rgb(104, 109, 109);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: inset -5px -5px 12px rgb(207, 218, 214),
+                inset 5px 5px 12px  rgb(207, 218, 214);
+
+
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+    grid-template-rows: repeat(5,50px);
+    grid-gap: 7px;
+    justify-content: center;
+    border-radius: 5px;
+
+
+}
+.display{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    text-align: end;
+    padding: 5px;
+    font-size: 25px;
+    border: none;
+
+    box-shadow: inset -5px -5px 12px rgb(207, 218, 214),
+                inset 5px 5px 12px  rgb(207, 218, 214);
+
+}
+button{
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: gray;
+    box-shadow: inset -5px -5px 12px rgb(207, 218, 214),
+                inset 5px 5px 12px  rgb(207, 218, 214);
+    font-size: 18px;
+    cursor: pointer;
+
+}
+button:active{
+    box-shadow: 0 1px #a8a8a8;
+    transform: translateY(2px);
+}
+.egual{
+    background-color: rgb(100, 70, 70);
+    font-weight: bold;
+    color: aliceblue;
+
+}
+button:hover{
+    background-color: #a8a8a8;
+    color: white;
+    transition: 0.5 ease-in-out;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #a8a8a8;
+    border: black 1px solid;
+}
